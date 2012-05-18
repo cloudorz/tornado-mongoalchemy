@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: tornadoext
+Version: 0.1dev
+Summary: copy from flask-mongoalchemy
+Home-page: http://www.douban.com/people/no_/
+Author: cloud
+Author-email: cloudcry@gmail.com
+License: MIT
+Description: copy from flask-mongoalchemy
+Keywords: tornado mongoalchemy
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

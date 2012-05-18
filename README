@@ -1,0 +1,34 @@
+
+安装方法
+下载zip 解压 到根目录
+
+python setup.py install
+
+配置到tornado的方法
+# part I
+settings = dict(
+                # mongodb config
+                MONGOALCHEMY_DATABASE="db_name",
+                debug=True,
+                )
+
+# part II
+from tornado.mongoalchemy import MongoAlchemy
+db = MongoAlchemy()
+
+# part III
+tornado.options.parse_command_line()
+app = Application()
+
+# init the modual
+db.init_app(app)
+
+# server 
+http_server = tornado.httpserver.HTTPServer(app, xheaders=True)
+http_server.listen(options.port)
+tornado.ioloop.IOLoop.instance().start()
+
+# mongoalchemy的使用方法
+参考：
+http://www.mongoalchemy.org/
+http://packages.python.org/Flask-MongoAlchemy/
