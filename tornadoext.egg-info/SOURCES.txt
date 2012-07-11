@@ -1,5 +1,5 @@
+.gitignore
 README
-fatal: Not a git repository (or any of the parent directories): .git
 setup.cfg
 setup.py
 tornadoext/__init__.py

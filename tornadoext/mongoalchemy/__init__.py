@@ -305,7 +305,7 @@ class Document(document.Document):
     def populate(self, data):
         any(setattr(self, k, v) for k, v in data.items())
 
-    def to_dict(self, include={}):
+    def to_dict(self, *include):
         raw_data = self.wrap()
         data = {}
         # cut
